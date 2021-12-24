@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VocabularyNCLVCell" customModule="hoctiengnhatglobal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="532" height="427"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="532" height="427"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmZ-eX-TKc">
+                        <rect key="frame" x="25" y="25" width="45" height="22"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <color key="textColor" red="0.08071329445" green="0.42571103570000002" blue="0.46552139520000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn5-pv-kbw">
+                        <rect key="frame" x="25" y="72" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.51543617249999996" green="0.34179943800000001" blue="0.37682887910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="w6w-jr-Dte">
+                        <rect key="frame" x="25" y="114" width="482" height="4"/>
+                        <color key="progressTintColor" red="0.9207936525" green="0.41542872790000002" blue="0.2274837196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="trackTintColor" red="0.50569581990000001" green="0.76019054649999995" blue="0.73313683269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </progressView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="level_1" translatesAutoresizingMaskIntoConstraints="NO" id="76u-Pb-0eW">
+                        <rect key="frame" x="457" y="25" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="c2m-lO-1YP"/>
+                            <constraint firstAttribute="width" constant="50" id="cGi-Eh-2Fr"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.93114501240000003" green="0.9643566012" blue="0.97715502980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jn5-pv-kbw" firstAttribute="leading" secondItem="gmZ-eX-TKc" secondAttribute="leading" id="2al-7J-3yI"/>
+                <constraint firstItem="w6w-jr-Dte" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="7wH-s9-Qdd"/>
+                <constraint firstAttribute="trailing" secondItem="76u-Pb-0eW" secondAttribute="trailing" constant="25" id="AJi-gh-azv"/>
+                <constraint firstItem="w6w-jr-Dte" firstAttribute="top" secondItem="jn5-pv-kbw" secondAttribute="bottom" constant="25" id="FgH-nt-8kp"/>
+                <constraint firstItem="jn5-pv-kbw" firstAttribute="leading" secondItem="w6w-jr-Dte" secondAttribute="leading" id="Ist-pQ-NTW"/>
+                <constraint firstItem="gmZ-eX-TKc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="K1D-fc-ZhC"/>
+                <constraint firstItem="76u-Pb-0eW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="Mm0-t0-pWd"/>
+                <constraint firstItem="jn5-pv-kbw" firstAttribute="top" secondItem="gmZ-eX-TKc" secondAttribute="bottom" constant="25" id="NBH-Dr-Ltc"/>
+                <constraint firstItem="gmZ-eX-TKc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="kuo-NA-SrC"/>
+            </constraints>
+            <size key="customSize" width="532" height="427"/>
+            <connections>
+                <outlet property="imgView" destination="76u-Pb-0eW" id="hMQ-bK-lf0"/>
+                <outlet property="labelName" destination="gmZ-eX-TKc" id="ElV-qr-FG3"/>
+                <outlet property="labelProgress" destination="jn5-pv-kbw" id="fLZ-gh-ObS"/>
+                <outlet property="progress" destination="w6w-jr-Dte" id="ysa-3R-vqh"/>
+            </connections>
+            <point key="canvasLocation" x="489.85507246376818" y="256.80803571428572"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="level_1" width="324" height="324"/>
+    </resources>
+</document>

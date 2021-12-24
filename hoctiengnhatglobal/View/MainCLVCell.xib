@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MainCLVCell" customModule="hoctiengnhatglobal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="229"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="229"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9c-xc-2cN">
+                        <rect key="frame" x="20" y="97.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.51543617249999996" green="0.34179943800000001" blue="0.37682887910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PQA-0z-bdj">
+                        <rect key="frame" x="20" y="138.5" width="260" height="4"/>
+                        <color key="progressTintColor" red="0.9207936525" green="0.41542872790000002" blue="0.2274837196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="trackTintColor" red="0.50569581990000001" green="0.76019054649999995" blue="0.73313683269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fd-sm-tjj">
+                        <rect key="frame" x="20" y="15" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuX-l5-RQd">
+                        <rect key="frame" x="20" y="56" width="45" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <color key="textColor" red="0.08071329445" green="0.42571103570000002" blue="0.46552139520000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.93114501240000003" green="0.9643566012" blue="0.97715502980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Fd-sm-tjj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="AOQ-fm-zcr"/>
+                <constraint firstItem="J9c-xc-2cN" firstAttribute="leading" secondItem="NuX-l5-RQd" secondAttribute="leading" id="FbW-B5-mu3"/>
+                <constraint firstItem="PQA-0z-bdj" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Hhn-4j-z2H"/>
+                <constraint firstItem="J9c-xc-2cN" firstAttribute="top" secondItem="NuX-l5-RQd" secondAttribute="bottom" constant="20" id="QKd-oq-C8X"/>
+                <constraint firstItem="J9c-xc-2cN" firstAttribute="leading" secondItem="PQA-0z-bdj" secondAttribute="leading" id="VDu-Mk-XiJ"/>
+                <constraint firstItem="3Fd-sm-tjj" firstAttribute="leading" secondItem="NuX-l5-RQd" secondAttribute="leading" id="aNj-ci-BjL"/>
+                <constraint firstItem="NuX-l5-RQd" firstAttribute="top" secondItem="3Fd-sm-tjj" secondAttribute="bottom" constant="20" id="gi4-0m-QFe"/>
+                <constraint firstItem="NuX-l5-RQd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="wTF-cx-aIY"/>
+                <constraint firstItem="PQA-0z-bdj" firstAttribute="top" secondItem="J9c-xc-2cN" secondAttribute="bottom" constant="20" id="xNM-wJ-8qC"/>
+            </constraints>
+            <size key="customSize" width="300" height="229"/>
+            <connections>
+                <outlet property="labelJpnName" destination="3Fd-sm-tjj" id="k90-kj-b2a"/>
+                <outlet property="labelName" destination="NuX-l5-RQd" id="qqz-UV-rid"/>
+                <outlet property="labelProgress" destination="J9c-xc-2cN" id="y1Y-x0-ZcC"/>
+                <outlet property="progress" destination="PQA-0z-bdj" id="WEN-JT-fkc"/>
+            </connections>
+            <point key="canvasLocation" x="321.73913043478262" y="190.51339285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>

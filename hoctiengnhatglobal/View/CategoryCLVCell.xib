@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCLVCell" customModule="hoctiengnhatglobal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="317"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="317"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="languages" translatesAutoresizingMaskIntoConstraints="NO" id="eUD-Dw-tHO">
+                        <rect key="frame" x="210" y="123.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Dw2-CH-Mta"/>
+                            <constraint firstAttribute="width" constant="50" id="clp-zn-W1I"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A73-Z1-QQ0">
+                        <rect key="frame" x="208" y="193.5" width="54.5" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                        <color key="textColor" red="0.08071329445" green="0.42571103570000002" blue="0.46552139520000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.93114501240000003" green="0.9643566012" blue="0.97715502980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="A73-Z1-QQ0" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="1r4-u3-Ltj"/>
+                <constraint firstItem="A73-Z1-QQ0" firstAttribute="top" secondItem="eUD-Dw-tHO" secondAttribute="bottom" constant="20" id="Cuy-wf-Qyd"/>
+                <constraint firstItem="eUD-Dw-tHO" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Czk-3U-ysm"/>
+                <constraint firstItem="eUD-Dw-tHO" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" constant="-15" id="v3E-Ol-QtD"/>
+            </constraints>
+            <size key="customSize" width="470" height="317"/>
+            <connections>
+                <outlet property="imgView" destination="eUD-Dw-tHO" id="MIU-7S-H4h"/>
+                <outlet property="labelName" destination="A73-Z1-QQ0" id="qWI-NV-F3A"/>
+            </connections>
+            <point key="canvasLocation" x="444.92753623188412" y="219.97767857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="languages" width="512" height="512"/>
+    </resources>
+</document>

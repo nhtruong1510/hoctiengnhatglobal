@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnyomiCLVCell" customModule="hoctiengnhatglobal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="209"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="209"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3s-L8-OKm">
+                        <rect key="frame" x="0.0" y="0.0" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.50569581990000001" green="0.76019054649999995" blue="0.73313683269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6G1-jD-KPb">
+                        <rect key="frame" x="0.0" y="32" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.9207936525" green="0.41542872790000002" blue="0.2274837196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="og9-5m-PRp" customClass="DesignButton" customModule="hoctiengnhatglobal" customModuleProvider="target">
+                        <rect key="frame" x="265" y="10" width="15" height="22"/>
+                        <state key="normal" image="speaker-2"/>
+                        <connections>
+                            <action selector="setSpeaker" destination="gTV-IL-0wX" eventType="touchDown" id="u2a-uP-RiN"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="og9-5m-PRp" secondAttribute="trailing" constant="20" id="1UH-lA-9aE"/>
+                <constraint firstItem="E3s-L8-OKm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="46g-4x-5TO"/>
+                <constraint firstItem="og9-5m-PRp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="UQS-d5-D74"/>
+                <constraint firstItem="E3s-L8-OKm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="brh-4l-eQ7"/>
+                <constraint firstItem="6G1-jD-KPb" firstAttribute="top" secondItem="E3s-L8-OKm" secondAttribute="bottom" constant="15" id="efD-i0-GSk"/>
+                <constraint firstItem="6G1-jD-KPb" firstAttribute="leading" secondItem="E3s-L8-OKm" secondAttribute="leading" id="zRZ-17-fBG"/>
+            </constraints>
+            <size key="customSize" width="300" height="209"/>
+            <connections>
+                <outlet property="labelJpn" destination="E3s-L8-OKm" id="frc-6T-nN5"/>
+                <outlet property="labelName" destination="6G1-jD-KPb" id="0rw-Wj-4h3"/>
+                <outlet property="speakerButton" destination="og9-5m-PRp" id="rWy-nd-uVl"/>
+            </connections>
+            <point key="canvasLocation" x="321.73913043478262" y="153.01339285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="speaker-2" width="15" height="15"/>
+    </resources>
+</document>

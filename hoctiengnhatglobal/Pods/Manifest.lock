@@ -1,0 +1,43 @@
+PODS:
+  - CountdownLabel (4.0.1)
+  - OSSSpeechKit (0.3.2)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - SQLite.swift (0.13.0):
+    - SQLite.swift/standard (= 0.13.0)
+  - SQLite.swift/standard (0.13.0)
+  - SwiftKeychainWrapper (4.0.1)
+
+DEPENDENCIES:
+  - CountdownLabel
+  - OSSSpeechKit
+  - RxCocoa
+  - SQLite.swift
+  - SwiftKeychainWrapper
+
+SPEC REPOS:
+  trunk:
+    - CountdownLabel
+    - OSSSpeechKit
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SQLite.swift
+    - SwiftKeychainWrapper
+
+SPEC CHECKSUMS:
+  CountdownLabel: c9975e3f329140b5e7d1f45cd63b1300badd1712
+  OSSSpeechKit: d16c1a0b7d25ed23c7d05397ea168037d701e3fc
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SQLite.swift: 8add701609fd0ef78d097dcc75d20a9782e6f5fc
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+
+PODFILE CHECKSUM: 07dc12bf1c207aedcd278661d90c75a7ced16696
+
+COCOAPODS: 1.10.1

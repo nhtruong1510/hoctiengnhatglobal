@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-hoctiengnhatglobal/Pods-hoctiengnhatglobal-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CountdownLabel/CountdownLabel.framework
+${BUILT_PRODUCTS_DIR}/OSSSpeechKit/OSSSpeechKit.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework
+${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework
